@@ -21,10 +21,11 @@ organism: mostly human
  
 
 > [!CAUTION]
-> to be solved:  how to be sure that compounds are only from human ?  is it better to include non-human in same table ? 
+> to be solved:  how to be sure that compounds are only from human ?  is it desirable to include non-human in same table ? 
 
-
-<img src="https://commons.wikimedia.org/wiki/Category:Secondary_metabolites#/media/File:Orsellinaldehyde.png" alt="chem_img" width="70"/>
+------
+A nice compound
+<img width="150" src="https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=572215&t=l"/>
 
 -------
 
