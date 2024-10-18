@@ -4,8 +4,8 @@ This repository provides tables of metabolites identifiers.
 
 The `tables` folder is the main folder and contains the following tables:
 
-* **`HMDB-to-KEGG_<date>.tsv`**: table with HMDB identifiers matching to KEGG identifiers.
-* **`LipidMaps-to-KEGG_<date>.tsv`**: table with LipidMaps identifiers matching to KEGG identifiers.
+* **`HMDB-to-KEGG_<date:MM-DD-YY>.tsv`**: table with HMDB identifiers matching to KEGG identifiers.
+* **`LipidMaps-to-KEGG_<date:MM-DD-YY>.tsv`**: table with LipidMaps identifiers matching to KEGG identifiers.
 
 ------
 A nice compound
