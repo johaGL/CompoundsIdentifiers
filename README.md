@@ -4,8 +4,8 @@ This repository provides tables of metabolites identifiers.
 
 The `tables` folder is the main folder and contains the following tables:
 
-* *HMDB_ids.tsv*: table with HMDB identifiers, and many other identifiers correspondances including KEGG ones.
-* *Lipidmaps_ids.tsv*: table with Lipidmaps identifiers matching to KEGG identifiers.
+* *`HMDB-to-KEGG_<date>.tsv`*: table with HMDB identifiers matching to KEGG identifiers.
+* *`LipidMaps-to-KEGG_<date>.tsv*: table with LipidMaps identifiers matching to KEGG identifiers.
 
 ------
 A nice compound
@@ -44,7 +44,7 @@ The `extra` folder contains pre-downloaded data to use as in the case of the HMD
 * hmdb_generator.py: it is an identical copy of the script *hmdb.py* created by yufree (https://gist.github.com/yufree/f552d865096010445fc7b969e7e9d439) which is an xml parser suited for the hmdb dowloaded database. See the [Instructions for HMDB](#instructions-for-hmdb) section and follow steps there before using the script. 
  . It takes ~ 10 min to complete
 
-* lipidmaps_generator.py: searches with the API of LIPIDMAPS database. It takes XX minutes ??? hours ???.
+* lipidmaps_generator.py: searches with the API of LIPIDMAPS database. It takes 1 minute.
 
 ### Instructions for HMDB
 
