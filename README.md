@@ -43,11 +43,6 @@ The `extra` folder contains HMDB related data required to generate `HMDB-to-KEGG
 
 * `hmdb_ids-tokegg.py` and `hmdb.py`: Detailed information, and/or if needing to re-run it, see the [Instructions for HMDB](#instructions-for-hmdb). Importantly *hmdb.py* is an identical copy of the fantastic script created by yufree (https://gist.github.com/yufree/f552d865096010445fc7b969e7e9d439) which is an xml parser suited for the hmdb dowloaded database; takes ~ 10 min to complete.
 
-
-> [!CAUTION]
-> to be solved:  how to be sure that compounds are only from human ?  is it desirable to include non-human in same table ? 
-
-
 ### Instructions for HMDB
 
 If willing to re-run the scripts to produce the final HMDB table, before anything, the following is required:
