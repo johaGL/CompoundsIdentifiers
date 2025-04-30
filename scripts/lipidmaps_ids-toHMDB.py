@@ -41,7 +41,7 @@ for u in lipidmaps_groups:
     download_date = lines[0].replace("/",
                                      "-")  #  the first line is a download_date
     print(download_date)
-    header = lines[1].split("\t")
+    expected_header_all_db_records = lines[1].split("\t")
 
     foo = {}
 
@@ -51,16 +51,27 @@ for u in lipidmaps_groups:
             elems = l.split('\t')
             foo[counter] = {}
             for i_ele in range(len(elems)):
-                foo[counter][header[i_ele]] = elems[i_ele]
-            counter += 1
+                foo[counter][expected_header_all_db_records[i_ele]] = elems[i_ele]
         except Exception as e:
-            print("Error, this row could not be added, fields not matching:")
-            print(l)
+            print(
+                f"Error {e}, fields not matching for this record {l[:18]} ...")
+            print(
+                "rescue: excluding extra-name field that interferes with adequate allocation to fields")
+            try:
+                elems = l.split('\t')
+                elems.pop(4)  # verified extra-name field to pop out
+                foo[counter] = {}
+                for i_ele in range(len(elems)):
+                    foo[counter][expected_header_all_db_records[i_ele]] = \
+                        elems[i_ele]
+                # if verif needed, paste here chunk 2 ((see comment at the bottom)
+            except:
+                print("sorry rescue was impossible, skipping this record")
+                continue
+        counter += 1
+    df = pd.DataFrame.from_dict(foo).T
 
-    df = pd.DataFrame.from_dict(
-        foo).T
-
-    df.columns = header
+    df.columns = expected_header_all_db_records
     df = df[interesting_columns]
     df = df.dropna()
     df = df.loc[df['hmdb_id'] != "", :]
