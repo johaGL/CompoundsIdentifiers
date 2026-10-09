@@ -9,7 +9,8 @@ The `tables` folder is the main folder and contains the following tables:
 
 ------
 A nice compound
-<img width="150" src="https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=572215&t=l"/>
+<img width="150" src="https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/572215/PNG?image_type=2d&record_type=2d"/>
+
 
 -------
 
